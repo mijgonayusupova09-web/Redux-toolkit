@@ -1,16 +1,33 @@
-# React + Vite
+This repo shows how to manage state in React with Redux Toolkit, covering both simple reducers and async stuff using thunks.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+What's Inside:
 
-Currently, two official plugins are available:
+- A central global store using Redux Toolkit
+- Sync and Async todo both made by Using Redux-Toolkit
+- Simple reducers for updates that do what you expect
+- Async actions using createAsyncThunk
+- Typed hooks and a slice-based setup
+- Examples showing how to dispatch actions, select data, and integrate with components
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tech Used:
 
-## React Compiler
+- React
+- React-Router
+- Redux Toolkit
+- React Redux
+- Ant Design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Project Layout:
 
-## Expanding the ESLint configuration
+    src/
+        store.js
+      features/
+        asyncSlice.js
+        counterSlice.js
+      pages/
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+How to Run:
+Install dependencies:
+npm install
+Start the dev server:
+npm run dev
